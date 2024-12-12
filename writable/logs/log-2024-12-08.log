@@ -1,0 +1,279 @@
+INFO - 2024-12-08 21:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 21:48:56 --> Error: Class "App\Controllers\CatalogoModel" not found
+[Method: GET, Route: catalogo]
+in APPPATH\Controllers\MobiliarioController.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 21:49:08 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: catalogo]
+in APPPATH\Views\catalogo_view.php on line 44.
+ 1 APPPATH\Views\catalogo_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\mobiliario\\app\\Views\\catalogo_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\mobiliario\\app\\Views\\catalogo_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('catalogo_view', [], true)
+ 5 APPPATH\Controllers\MobiliarioController.php(14): view('catalogo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+INFO - 2024-12-08 21:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 21:55:17 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: catalogo/agregarCarrito/2]
+in APPPATH\Controllers\MobiliarioController.php on line 36.
+ 1 APPPATH\Controllers\MobiliarioController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\mobiliario\\app\\Controllers\\MobiliarioController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->agregarCarrito('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+INFO - 2024-12-08 21:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 21:55:38 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: catalogo/agregarCarrito/2]
+in APPPATH\Controllers\MobiliarioController.php on line 36.
+ 1 APPPATH\Controllers\MobiliarioController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\mobiliario\\app\\Controllers\\MobiliarioController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->agregarCarrito('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+INFO - 2024-12-08 21:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 21:55:45 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: catalogo/agregarCarrito/2]
+in APPPATH\Controllers\MobiliarioController.php on line 36.
+ 1 APPPATH\Controllers\MobiliarioController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\mobiliario\\app\\Controllers\\MobiliarioController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->agregarCarrito('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+INFO - 2024-12-08 21:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 21:56:15 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: carrito]
+in APPPATH\Views\carrito_view.php on line 33.
+ 1 APPPATH\Views\carrito_view.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\mobiliario\\app\\Views\\carrito_view.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\mobiliario\\app\\Views\\carrito_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('carrito_view', [], true)
+ 5 APPPATH\Controllers\MobiliarioController.php(56): view('carrito_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->verCarrito()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+INFO - 2024-12-08 21:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 21:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 22:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 22:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 22:17:18 --> Error: Class "App\Controllers\CatalogoModel" not found
+[Method: POST, Route: catalogo/agregarCarrito/1]
+in APPPATH\Controllers\MobiliarioController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->agregarCarrito('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+INFO - 2024-12-08 22:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 22:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 22:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 22:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 22:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 22:23:29 --> Error: Call to undefined method Endroid\QrCode\Writer\PngWriter::writeString()
+[Method: GET, Route: catalogo/generarQR]
+in APPPATH\Controllers\MobiliarioController.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 22:25:52 --> Error: Call to undefined method Endroid\QrCode\Writer\PngWriter::writeFile()
+[Method: GET, Route: catalogo/generarQR]
+in APPPATH\Controllers\MobiliarioController.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 22:26:28 --> TypeError: Endroid\QrCode\Writer\PngWriter::write(): Argument #2 ($logo) must be of type ?Endroid\QrCode\Logo\LogoInterface, string given, called in C:\xampp\htdocs\mobiliario\app\Controllers\MobiliarioController.php on line 98
+[Method: GET, Route: catalogo/generarQR]
+in VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php on line 18.
+ 1 APPPATH\Controllers\MobiliarioController.php(98): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), 'C:\\xampp\\htdocs\\mobiliario\\writable\\uploads/qr_code.png')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 22:27:22 --> TypeError: Endroid\QrCode\Writer\PngWriter::write(): Argument #2 ($logo) must be of type ?Endroid\QrCode\Logo\LogoInterface, string given, called in C:\xampp\htdocs\mobiliario\app\Controllers\MobiliarioController.php on line 98
+[Method: GET, Route: catalogo/generarQR]
+in VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php on line 18.
+ 1 APPPATH\Controllers\MobiliarioController.php(98): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), 'C:\\xampp\\htdocs\\mobiliario\\writable\\uploads/qr_code.png')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 22:28:18 --> Exception: Unable to generate image: please check if the GD extension is enabled and configured correctly
+[Method: GET, Route: catalogo/generarQR]
+in VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php on line 33.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 2 APPPATH\Controllers\MobiliarioController.php(98): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 22:29:24 --> Exception: Unable to generate image: please check if the GD extension is enabled and configured correctly
+[Method: GET, Route: catalogo/generarQR]
+in VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php on line 33.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 2 APPPATH\Controllers\MobiliarioController.php(98): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 22:29:57 --> Exception: Unable to generate image: please check if the GD extension is enabled and configured correctly
+[Method: GET, Route: catalogo/generarQR]
+in VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php on line 33.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 2 APPPATH\Controllers\MobiliarioController.php(98): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 22:56:43 --> Exception: Unable to generate image: please check if the GD extension is enabled and configured correctly
+[Method: GET, Route: catalogo/generarQR]
+in VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php on line 33.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 2 APPPATH\Controllers\MobiliarioController.php(98): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 22:56:56 --> Exception: Unable to generate image: please check if the GD extension is enabled and configured correctly
+[Method: GET, Route: catalogo/generarQR]
+in VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php on line 33.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 2 APPPATH\Controllers\MobiliarioController.php(98): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+INFO - 2024-12-08 22:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 22:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 22:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 23:00:19 --> Error: Call to undefined method Endroid\QrCode\Writer\PngWriter::writeFile()
+[Method: GET, Route: catalogo/generarQR]
+in APPPATH\Controllers\MobiliarioController.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 23:12:42 --> ErrorException: file_put_contents(C:\xampp\htdocs\mobiliario\public\public/uploads/qr_code.png): Failed to open stream: No such file or directory
+[Method: GET, Route: catalogo/generarQR]
+in APPPATH\Controllers\MobiliarioController.php on line 102.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(C:\\xampp\\htdocs\\mobiliario\\public\\public/uploads/qr_code.png): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\mobiliario\\app\\Controllers\\MobiliarioController.php', 102)
+ 2 APPPATH\Controllers\MobiliarioController.php(102): file_put_contents('C:\\xampp\\htdocs\\mobiliario\\public\\public/uploads/qr_code.png', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '@' . "\0" . '' . "\0" . '@' . "\0" . '' . "\0" . '' . "\0" . 'Bò2ı' . "\0" . '' . "\0" . '' . "\0" . '	pHYs' . "\0" . '' . "\0" . 'Ä' . "\0" . '' . "\0" . 'Ä•+' . "\0" . '' . "\0" . '¤IDATxœíİËNc9@Ñ¦ÕÿÿËÕ3FW”ƒãÇ†µæä&-KÙşøóçÏ?@Ó¿§ß' . "\0" . 'ğ}†0C˜€!LÀ&`0„	Âa†0C˜€!LÀ&`0„ı÷ê|||¬x3Vli~ü˜ÿBÆ|üMş:*»Á\'¿¥ñ×<ëŸÈ
+a†0C˜€!LÀ&`{yŒôhÛ4bü_ÿ+æ@“ƒ‡É·4ş%ON¡V±¶½¥Iş%Í
+a†0C˜€!LÀ&`{ÏéÑÙ2+Æ3VLb¶»&¿¥ô¼jÜÍ[¾¬À&`0„	Âa†°…c¤³ÎNŒ¶=.œM>ıQåğ½ı¬À&`0„	Âa†°;F:{qÎäliü5Ç½íiÜÙÁXÂa†0C˜€!LÀ¶pŒtö÷ÛÆ	ïºäæ{¯9yaÒÙù¶<8éæ)”Âa†0C˜€!LÀö1ÒŠQÊ6gg!ÛîF:»™©2[Êı%[!LÀ&`0„	Âa7ï´x»ÊykÛÔKoQ÷ƒÿÈ­À&`0„	Âa†°—ÇHÛ¶k¬\'¬xĞÙ÷ùhÅ™x“Î¦ıŒ­TV`0„	Âa†0CØ{v#mû/ÿ¤ôŒáì' . "\0" . 'oÜÙËÎ·Û“Âa†0C˜€!LÀö»‘¶mÂ¸ä÷5ş–*W­b­8ªnÛ÷yÉá{V`0„	Âa†0CØÂİHÎ|*g£]èÂ_ÜÏcŒ¿‹€!LÀ&`0„	Â^ŞT¹4èì¾¥ßÒYÛöm{úÙ}²C˜€!LÀ&`0„	Âvj7ùãÛÎÄÛö ³·(­˜Ä\\x"ßäkŞ<´C˜€!LÀ&`0„	ÂŞs¨İÏÛuÚÛ…\'È­MM>èìæ°¯™>|Ï¡vğ»Âa†0C˜€!ìå1ÒÙCí¶íÙöôñ?kÅ çÂ9î’#õ¬À&`0„	Âa†°÷ìFºğÆ£mGêmÛ_õèìy€“*;‡nŞe†0C˜€!LÀ&`0„-¼éÑÙ»gÎtwöP»ÉïóÂ‘Ï¶9ùb7ğLÀ&`0„	Âa»w#ı’ûÆİé’¾é¬K63Y!LÀ&`0„	ÂaïÙôhÅ gü?ò•ä*×]xràY—ü¬À&`0„	Âa†°÷ìFš}GOº[aÛ®©m[*w#]8–[ú÷i†0C˜€!LÀ&`0„-Üôèì„cÅ‘z¯¹brpvZ¶â«ûyãÃm»Ğ>Y!LÀ&`0„	ÂaÇH+6v¤ï1Ú¶Óåì-JÛfu+LÎöÿ}Z!LÀ&`0„	ÂaWj÷èÂ­*+tö¶³¿ı wÉ´Ì
+a†0C˜€!LÀ&`{yŒtv”²mrpvCÏ¸m§¨mùl›½¿ê]¬À&`0„	Âa†°{7ÒÏ»bçìæ›³ÎNŒ¶è÷V`0„	Âa†0CØ{µ»ğâœm;œVlUÙ¶sèÂó' . "\0" . '+£¾³{Ë>Y!LÀ&`0„	Âaµ;{Ù…O?û1\']ø-=ºğ,Ä¥CV+0„	Âa†0C˜€!l÷İHékÎN¶&=ØíÂ=F?cƒ”Âa†0C˜€!LÀ¶ûn¤GgÿM?şô7	M>}òKÿñÊ‘z+^séÇ´C˜€!LÀ&`0„	Â®#=ZqeQe/ÔähÛşªÉ×<{PŞ¸³OÿšÂa†0C˜€!LÀ¶pŒtv¯É£ıW×üÕä¼jÛ°mò5m;$ğÂ‹²ÆŸş5+0„	Âa†0C˜€!l÷İHã¯¹Í¶«€&|Û—¼í¦«Çr“öÏ)­À&`0„	Âa†°—ÇH»¶7şã*ßÒ…ŸÈ	x€!LÀ&`0„	Â^>ÔîìnG•IØÙ)Ôø„ãÂiÙ
+•-__³C˜€!LÀ&`0„	ÂŞs7Ò¶AÎ¶Ãâ.¼sèìg?{ÒİŠ_ÜŠ±Ü£ñYİHğ»Âa†0C˜€!ì=c¤Gnjù%M:{YÔ
+éN_³C˜€!LÀ&`0„	Â‘*Vr&OÍIÛÆ]+œ}óû\'F¬À&`0„	Âa†0c¤%Ã¡G+†ã¯9ùæW‡Î¾7éì‘zŸ¬À&`0„	Âa†°…c¤ı;3şêìíDã¯¹b3Ó£m÷B=Ú¶õçì·´tf†0C˜€!LÀ&`0„½gŒtöæ›I“ã®³»RÎîpŸlÛvµÒ…;±¾Á
+a†0C˜€!LÀ&`û¸pÏ0È
+a†0C˜€!LÀ&`0„	Âa†0C˜€!LÀ&`0„	Âşşû¦€	‰*' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 23:13:01 --> ErrorException: file_put_contents(C:\xampp\htdocs\mobiliario\public\public/uploads/qr_code.png): Failed to open stream: No such file or directory
+[Method: GET, Route: catalogo/generarQR]
+in APPPATH\Controllers\MobiliarioController.php on line 102.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(C:\\xampp\\htdocs\\mobiliario\\public\\public/uploads/qr_code.png): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\mobiliario\\app\\Controllers\\MobiliarioController.php', 102)
+ 2 APPPATH\Controllers\MobiliarioController.php(102): file_put_contents('C:\\xampp\\htdocs\\mobiliario\\public\\public/uploads/qr_code.png', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '@' . "\0" . '' . "\0" . '@' . "\0" . '' . "\0" . '' . "\0" . 'Bò2ı' . "\0" . '' . "\0" . '' . "\0" . '	pHYs' . "\0" . '' . "\0" . 'Ä' . "\0" . '' . "\0" . 'Ä•+' . "\0" . '' . "\0" . '¤IDATxœíİËNc9@Ñ¦ÕÿÿËÕ3FW”ƒãÇ†µæä&-KÙşøóçÏ?@Ó¿§ß' . "\0" . 'ğ}†0C˜€!LÀ&`0„	Âa†0C˜€!LÀ&`0„ı÷ê|||¬x3Vli~ü˜ÿBÆ|üMş:*»Á\'¿¥ñ×<ëŸÈ
+a†0C˜€!LÀ&`{yŒôhÛ4bü_ÿ+æ@“ƒ‡É·4ş%ON¡V±¶½¥Iş%Í
+a†0C˜€!LÀ&`{ÏéÑÙ2+Æ3VLb¶»&¿¥ô¼jÜÍ[¾¬À&`0„	Âa†°…c¤³ÎNŒ¶=.œM>ıQåğ½ı¬À&`0„	Âa†°;F:{qÎäliü5Ç½íiÜÙÁXÂa†0C˜€!LÀ¶pŒtö÷ÛÆ	ïºäæ{¯9yaÒÙù¶<8éæ)”Âa†0C˜€!LÀö1ÒŠQÊ6gg!ÛîF:»™©2[Êı%[!LÀ&`0„	Âa7ï´x»ÊykÛÔKoQ÷ƒÿÈ­À&`0„	Âa†°—ÇHÛ¶k¬\'¬xĞÙ÷ùhÅ™x“Î¦ıŒ­TV`0„	Âa†0CØ{v#mû/ÿ¤ôŒáì' . "\0" . 'oÜÙËÎ·Û“Âa†0C˜€!LÀö»‘¶mÂ¸ä÷5ş–*W­b­8ªnÛ÷yÉá{V`0„	Âa†0CØÂİHÎ|*g£]èÂ_ÜÏcŒ¿‹€!LÀ&`0„	Â^ŞT¹4èì¾¥ßÒYÛöm{úÙ}²C˜€!LÀ&`0„	Âvj7ùãÛÎÄÛö ³·(­˜Ä\\x"ßäkŞ<´C˜€!LÀ&`0„	ÂŞs¨İÏÛuÚÛ…\'È­MM>èìæ°¯™>|Ï¡vğ»Âa†0C˜€!ìå1ÒÙCí¶íÙöôñ?kÅ çÂ9î’#õ¬À&`0„	Âa†°÷ìFºğÆ£mGêmÛ_õèìy€“*;‡nŞe†0C˜€!LÀ&`0„-¼éÑÙ»gÎtwöP»ÉïóÂ‘Ï¶9ùb7ğLÀ&`0„	Âa»w#ı’ûÆİé’¾é¬K63Y!LÀ&`0„	ÂaïÙôhÅ gü?ò•ä*×]xràY—ü¬À&`0„	Âa†°÷ìFš}GOº[aÛ®©m[*w#]8–[ú÷i†0C˜€!LÀ&`0„-Üôèì„cÅ‘z¯¹brpvZ¶â«ûyãÃm»Ğ>Y!LÀ&`0„	ÂaÇH+6v¤ï1Ú¶Óåì-JÛfu+LÎöÿ}Z!LÀ&`0„	ÂaWj÷èÂ­*+tö¶³¿ı wÉ´Ì
+a†0C˜€!LÀ&`{yŒtv”²mrpvCÏ¸m§¨mùl›½¿ê]¬À&`0„	Âa†°{7ÒÏ»bçìæ›³ÎNŒ¶è÷V`0„	Âa†0CØ{µ»ğâœm;œVlUÙ¶sèÂó' . "\0" . '+£¾³{Ë>Y!LÀ&`0„	Âaµ;{Ù…O?û1\']ø-=ºğ,Ä¥CV+0„	Âa†0C˜€!l÷İHékÎN¶&=ØíÂ=F?cƒ”Âa†0C˜€!LÀ¶ûn¤GgÿM?şô7	M>}òKÿñÊ‘z+^séÇ´C˜€!LÀ&`0„	Â®#=ZqeQe/ÔähÛşªÉ×<{PŞ¸³OÿšÂa†0C˜€!LÀ¶pŒtv¯É£ıW×üÕä¼jÛ°mò5m;$ğÂ‹²ÆŸş5+0„	Âa†0C˜€!l÷İHã¯¹Í¶«€&|Û—¼í¦«Çr“öÏ)­À&`0„	Âa†°—ÇH»¶7şã*ßÒ…ŸÈ	x€!LÀ&`0„	Â^>ÔîìnG•IØÙ)Ôø„ãÂiÙ
+•-__³C˜€!LÀ&`0„	ÂŞs7Ò¶AÎ¶Ãâ.¼sèìg?{ÒİŠ_ÜŠ±Ü£ñYİHğ»Âa†0C˜€!ì=c¤Gnjù%M:{YÔ
+éN_³C˜€!LÀ&`0„	Â‘*Vr&OÍIÛÆ]+œ}óû\'F¬À&`0„	Âa†0c¤%Ã¡G+†ã¯9ùæW‡Î¾7éì‘zŸ¬À&`0„	Âa†°…c¤ı;3şêìíDã¯¹b3Ó£m÷B=Ú¶õçì·´tf†0C˜€!LÀ&`0„½gŒtöæ›I“ã®³»RÎîpŸlÛvµÒ…;±¾Á
+a†0C˜€!LÀ&`û¸pÏ0È
+a†0C˜€!LÀ&`0„	Âa†0C˜€!LÀ&`0„	Âşşû¦€	‰*' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-08 23:14:11 --> Error: Call to undefined method Endroid\QrCode\Writer\PngWriter::writeFile()
+[Method: GET, Route: catalogo/generarQR]
+in APPPATH\Controllers\MobiliarioController.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MobiliarioController->generarQR()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MobiliarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+INFO - 2024-12-08 23:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 23:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 23:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,178 @@
+CRITICAL - 2024-12-07 19:58:38 --> mysqli_sql_exception: Access denied for user 'usuario'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 140.
+ 1 APPPATH\Views\welcome_message.php(140): mysqli->__construct('localhost', 'usuario', Object(SensitiveParameterValue), 'nombre_bd')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\mobiliario\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+ERROR - 2024-12-07 22:04:01 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\mobiliario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\mobiliario\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\mobiliario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\mobiliario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\mobiliario\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\mobiliario\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\mobiliario\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\mobiliario\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\mobiliario\app\Models\UsuariosModel.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\mobiliario\app\Controllers\UsuariosController.php(39): App\Models\UsuariosModel->crearUsuario(Array)
+#9 C:\xampp\htdocs\mobiliario\system\CodeIgniter.php(933): App\Controllers\UsuariosController->registrar()
+#10 C:\xampp\htdocs\mobiliario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+#11 C:\xampp\htdocs\mobiliario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\mobiliario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\mobiliario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\mobiliario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\mobiliario\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2024-12-07 22:04:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: register/registrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (:nombre:, :apellido:, :correo:, :telefono:, :direccion:, :tipo_usuario:, :password:, :fecha_creacion:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UsuariosModel.php(32): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\UsuariosController.php(39): App\Models\UsuariosModel->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuariosController->registrar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-07 22:04:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (\'carlos\', \'MENDEZ Mauricio\', \'mcar@21.con\', \'2311999101\', \'lala asal\', \'2\', \'$2y$10$wcwt73vtT.tkfwoahQJ40.5/YGZDdb9m4M4AdEbHrTzVYnRnWA.SK\', \'2024-12-07 22:04:00\', \'2024-12-07 22:04:01\', \'2024-12-07 22:04:01\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (\'carlos\', \'MENDEZ Mauricio\', \'mcar@21.con\', \'2311999101\', \'lala asal\', \'2\', \'$2y$10$wcwt73vtT.tkfwoahQJ40.5/YGZDdb9m4M4AdEbHrTzVYnRnWA.SK\', \'2024-12-07 22:04:00\', \'2024-12-07 22:04:01\', \'2024-12-07 22:04:01\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (:nombre:, :apellido:, :correo:, :telefono:, :direccion:, :tipo_usuario:, :password:, :fecha_creacion:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\UsuariosModel.php(32): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\UsuariosController.php(39): App\Models\UsuariosModel->crearUsuario([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuariosController->registrar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-07 22:04:01 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (\'carlos\', \'MENDEZ Mauricio\', \'mcar@21.con\', \'2311999101\', \'lala asal\', \'2\', \'$2y$10$wcwt73vtT.tkfwoahQJ40.5/YGZDdb9m4M4AdEbHrTzVYnRnWA.SK\', \'2024-12-07 22:04:00\', \'2024-12-07 22:04:01\', \'2024-12-07 22:04:01\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (\'carlos\', \'MENDEZ Mauricio\', \'mcar@21.con\', \'2311999101\', \'lala asal\', \'2\', \'$2y$10$wcwt73vtT.tkfwoahQJ40.5/YGZDdb9m4M4AdEbHrTzVYnRnWA.SK\', \'2024-12-07 22:04:00\', \'2024-12-07 22:04:01\', \'2024-12-07 22:04:01\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (\'carlos\', \'MENDEZ Mauricio\', \'mcar@21.con\', \'2311999101\', \'lala asal\', \'2\', \'$2y$10$wcwt73vtT.tkfwoahQJ40.5/YGZDdb9m4M4AdEbHrTzVYnRnWA.SK\', \'2024-12-07 22:04:00\', \'2024-12-07 22:04:01\', \'2024-12-07 22:04:01\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (:nombre:, :apellido:, :correo:, :telefono:, :direccion:, :tipo_usuario:, :password:, :fecha_creacion:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\UsuariosModel.php(32): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\UsuariosController.php(39): App\Models\UsuariosModel->crearUsuario([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuariosController->registrar()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+ERROR - 2024-12-07 22:04:02 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\mobiliario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\mobiliario\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\mobiliario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\mobiliario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\mobiliario\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\mobiliario\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\mobiliario\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\mobiliario\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\mobiliario\app\Models\UsuariosModel.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\mobiliario\app\Controllers\UsuariosController.php(39): App\Models\UsuariosModel->crearUsuario(Array)
+#9 C:\xampp\htdocs\mobiliario\system\CodeIgniter.php(933): App\Controllers\UsuariosController->registrar()
+#10 C:\xampp\htdocs\mobiliario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+#11 C:\xampp\htdocs\mobiliario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\mobiliario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\mobiliario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\mobiliario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\mobiliario\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2024-12-07 22:04:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: register/registrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (:nombre:, :apellido:, :correo:, :telefono:, :direccion:, :tipo_usuario:, :password:, :fecha_creacion:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UsuariosModel.php(32): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\UsuariosController.php(39): App\Models\UsuariosModel->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuariosController->registrar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-07 22:04:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (\'carlos\', \'MENDEZ Mauricio\', \'mcar@21.con\', \'2311999101\', \'lala asal\', \'2\', \'$2y$10$ZU/o4WEd.C16.ibBoEETSe7e3JSG6zUSwasLpQ/yPztHkOjrfiMu.\', \'2024-12-07 22:04:02\', \'2024-12-07 22:04:02\', \'2024-12-07 22:04:02\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (\'carlos\', \'MENDEZ Mauricio\', \'mcar@21.con\', \'2311999101\', \'lala asal\', \'2\', \'$2y$10$ZU/o4WEd.C16.ibBoEETSe7e3JSG6zUSwasLpQ/yPztHkOjrfiMu.\', \'2024-12-07 22:04:02\', \'2024-12-07 22:04:02\', \'2024-12-07 22:04:02\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (:nombre:, :apellido:, :correo:, :telefono:, :direccion:, :tipo_usuario:, :password:, :fecha_creacion:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\UsuariosModel.php(32): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\UsuariosController.php(39): App\Models\UsuariosModel->crearUsuario([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuariosController->registrar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+CRITICAL - 2024-12-07 22:04:02 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (\'carlos\', \'MENDEZ Mauricio\', \'mcar@21.con\', \'2311999101\', \'lala asal\', \'2\', \'$2y$10$ZU/o4WEd.C16.ibBoEETSe7e3JSG6zUSwasLpQ/yPztHkOjrfiMu.\', \'2024-12-07 22:04:02\', \'2024-12-07 22:04:02\', \'2024-12-07 22:04:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (\'carlos\', \'MENDEZ Mauricio\', \'mcar@21.con\', \'2311999101\', \'lala asal\', \'2\', \'$2y$10$ZU/o4WEd.C16.ibBoEETSe7e3JSG6zUSwasLpQ/yPztHkOjrfiMu.\', \'2024-12-07 22:04:02\', \'2024-12-07 22:04:02\', \'2024-12-07 22:04:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (\'carlos\', \'MENDEZ Mauricio\', \'mcar@21.con\', \'2311999101\', \'lala asal\', \'2\', \'$2y$10$ZU/o4WEd.C16.ibBoEETSe7e3JSG6zUSwasLpQ/yPztHkOjrfiMu.\', \'2024-12-07 22:04:02\', \'2024-12-07 22:04:02\', \'2024-12-07 22:04:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `tipo_usuario`, `password`, `fecha_creacion`, `created_at`, `updated_at`) VALUES (:nombre:, :apellido:, :correo:, :telefono:, :direccion:, :tipo_usuario:, :password:, :fecha_creacion:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\UsuariosModel.php(32): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\UsuariosController.php(39): App\Models\UsuariosModel->crearUsuario([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuariosController->registrar()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+INFO - 2024-12-07 23:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-07 23:10:30 --> ErrorException: Undefined property: App\Controllers\UsuariosController::$db
+[Method: POST, Route: register/registrar]
+in APPPATH\Controllers\UsuariosController.php on line 15.
+ 1 APPPATH\Controllers\UsuariosController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UsuariosController::$db', 'C:\\xampp\\htdocs\\mobiliario\\app\\Controllers\\UsuariosController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuariosController->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\mobiliario\\public\\index.php')
+INFO - 2024-12-07 23:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 23:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 23:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 23:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 23:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 23:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 23:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 23:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 23:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 23:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 23:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
